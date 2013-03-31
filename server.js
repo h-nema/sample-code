@@ -1,5 +1,6 @@
 var http = require('http');
 http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello Node Ninja\n');
+  res.end('Hello World_n');
+  console.log('request url: ', req.url);
 }).listen(80);
