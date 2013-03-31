@@ -1,8 +1,7 @@
+server.js
+$ cat server.js
 var http = require('http');
-
 http.createServer(function (req, res) {
-  
-  res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.end('Hello, world!');
-  
-}).listen(process.env.PORT || 80);
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello Node Ninja\n');
+}).listen(80);
